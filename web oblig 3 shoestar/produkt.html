@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5849e56fa1.js" crossorigin="anonymous"></script>
+      
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>SHOESTAR</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <i class="fa-solid fa-bars"></i>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="ShoeStar" class="logo">
+                </a>
+                <div id="toplogo">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                 </div>
+            </nav>
+            <nav>
+                <span>
+                    <i id="search" class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search" id="searchbar">
+                    <i id="kat" class="fa-solid fa-sliders"></i>
+                </span>
+                <ul class="navbar">
+                    <li><a href="produkt.html">Salg</a></li>
+                    <li><a href="produkt.html">Nyheter</a></li>
+                    <li><a href="produkt.html">Merke</a></li>
+                    <li><a href="produkt.html">1-4 år</a></li>
+                    <li><a href="produkt.html">5-9 år</a></li>
+                    <li><a href="produkt.html">10+ år</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+        
+                <div class="produkt-grid">
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko1.jpg" alt="produkt1">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>590kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko2.jpg" alt="produkt2">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>479kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko1.jpg" alt="produkt3">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>699kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko2.jpg" alt="produkt4">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>500kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko1.jpg" alt="produkt5">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>999kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko2.jpg" alt="produkt6">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>3000kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko1.jpg" alt="produkt7">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>290kr</p>
+                    </article>
+                    <article class="produkt">
+                        <span class="hjerte">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <a href="produkt.html">
+                            <img src="img/sko2.jpg" alt="produkt8">
+                        </a>
+                        <h3>Nike</h3>
+                        <p>Gratis</p>
+                    </article>
+
+
+                </div>
+
+
+        </main>       
+        
+        <footer>
+            <section id="generel">
+                <h2>GENEREL INFO</h2>
+                <article>
+                    <h3>Om oss</h3>
+                    <p>Første nettbutikk, plis vis nåde... </p>
+                </article>
+                <article>
+                    <h3>Kontakt</h3>
+                    <p>ShoeStar@gmail.com / Tlf.33938493 </p>
+                </article>
+                <article>
+                    <h3>Retur</h3>
+                    <p>Returrett 60 dagers åpent kjøp </p>
+                </article>
+                <article>
+                    <h3>Anmeldelser</h3>
+                    <p>"Mine barn fant sko på egenhånd" </p>
+                </article>
+            </section>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("kat").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
+
+
+</html>

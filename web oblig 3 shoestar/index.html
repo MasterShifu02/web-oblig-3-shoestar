@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5849e56fa1.js" crossorigin="anonymous"></script>
+      
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>SHOESTAR</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <i class="fa-solid fa-bars"></i>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="ShoeStar" class="logo">
+                </a>
+                <div id="toplogo">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                 </div>
+            </nav>
+            <nav>
+                <span>
+                    <i id="search" class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search" id="searchbar">
+                    <i id="kat" class="fa-solid fa-sliders"></i>
+                </span>
+                <ul class="navbar">
+                    <li><a href="produkt.html">Salg</a></li>
+                    <li><a href="produkt.html">Nyheter</a></li>
+                    <li><a href="produkt.html">Merke</a></li>
+                    <li><a href="produkt.html">1-4 år</a></li>
+                    <li><a href="produkt.html">5-9 år</a></li>
+                    <li><a href="produkt.html">10+ år</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="overaskelse">
+                <img src="img/overaskelse.png" alt="grå midlertidig bilde">
+                <section>
+                    <h2>
+                        <button>Overaskelse</button>
+                    </h2>                    
+                </section>
+            </article>
+<hr>
+            <section id="kjønn">
+                <h2>
+                    <a href="kategori.html" id="gutt">GUTTER</a>
+                    <a href="kategori.html" id="jent">JENTER</a>
+                </h2>
+            </section>
+<hr>           
+        </main>       
+        
+        <footer>
+            <section id="generel">
+                <h2>GENEREL INFO</h2>
+                <article>
+                    <h3>Om oss</h3>
+                    <p>Første nettbutikk, plis vis nåde... </p>
+                </article>
+                <article>
+                    <h3>Kontakt</h3>
+                    <p>ShoeStar@gmail.com / Tlf.33938493 </p>
+                </article>
+                <article>
+                    <h3>Retur</h3>
+                    <p>Returrett 60 dagers åpent kjøp </p>
+                </article>
+                <article>
+                    <h3>Anmeldelser</h3>
+                    <p>"Mine barn fant sko på egenhånd" </p>
+                </article>
+            </section>
+        </footer>
+        </div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("kat").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
+
+
+</html>
